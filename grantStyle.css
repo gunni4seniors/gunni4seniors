@@ -1,0 +1,552 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color:#FAEBD7;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; 
+  font-family: 'Times New Roman';
+}
+
+/* NAVIGATION */
+.navLinks {
+  background-color: #228B22;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.GHA_Logo #logo {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+/* Center nav links (desktop) */
+.center-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.center-links a {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.center-links a:hover, button:hover {
+  background-color: #78fa2c;
+}
+
+.standardButton {
+  background-color: #228B22;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px; /* Rounds all corners by 10 pixels */
+}
+
+.standardButton:hover {
+  background-color: #78fa2c;
+
+}
+
+/* === Drop Down ===*/
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1vw;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #78fa2c;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ======= MOBILE NAV MENU ======= */
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .center-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    transform: none;
+    width: 100%;
+    background-color: #228B22;
+    padding: 10px 0;
+  }
+
+  .center-links.show {
+    display: flex;
+  }
+
+  .center-links a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: clamp(14px, 3.5vw, 20px);
+    color: white;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+}
+
+/* === GRANT IMAGE ===*/
+#scrollImage,
+.aboutImage {
+  width: 100%;   
+  height: auto;
+  display: block;
+}
+
+#scrollImg.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.grantImage {
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+  background: black;
+  position: relative;
+}
+
+.grantImage img {
+  opacity: 0.5;
+  width: 100%;   
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay text */
+.imageTextMiddle {
+  position:absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* === Grant Info (Overview & Eligibility) == */
+
+.overview-eligibility-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+  flex-wrap:wrap;
+  flex-direction: column;
+}
+
+.overview-obj, .eligibility-obj {
+  flex:1;
+  min-width: 350px;
+  padding: 20px;
+  background-color: #858585;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.overview-text b, .eligibility-text b {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* make headings pop a bit */
+.overview-text h1, .eligibility-text h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.downloadGrantInfo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 1%;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 800px) {
+  .mission-objective-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+/* === Approved Grants & Donations === */
+.approvedGrantsDonations{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 20px;
+  /* width: 50vw; */
+  max-width: 50vw;
+  min-width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin: 2rem auto;
+  padding: 2%;
+}
+
+.approvedGrantsDonations h1{
+  font-size: 2vw;
+  list-style: none;
+}
+.approvedGrantsDonations li{
+  font-size: 1.5vw;
+  list-style-type:none;
+  padding: 2%;
+}
+
+@media(max-width:768px){
+  .approvedGrantsDonations{
+    max-width: fit-content;
+  }
+
+  .approvedGrantsDonations h1{
+    font-size: 4vw;
+    list-style: none;
+  }
+  .approvedGrantsDonations li{
+    font-size: 3vw;
+  }
+}
+
+
+/* === Grant Slideshow === */
+.grants-obj {
+  text-align: center;
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+}
+
+.grants-header {
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+/* Slide container */
+.grants-slides {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  gap: 1.5rem;
+}
+
+/* Navigation arrows */
+.prev, .next {
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  user-select: none;
+  transition: color 0.3s;
+  align-self: center;
+}
+
+.prev:hover, .next:hover {
+  color: #0077cc;
+}
+
+/* Grant cards */
+.grant-obj-1, .grant-obj-2, .grant-obj-3 {
+  flex: 1;
+  margin: 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f7f7f7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 1.5rem;
+  min-height: 480px;
+  max-height: 480px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grant-obj-1:hover,
+.grant-obj-2:hover,
+.grant-obj-3:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Grant year text */
+.grant-year {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Grant image */
+.grantImg {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Grant description */
+.grantBlurb {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.downloadGrantInfo ul li {
+  font-size: 1.5rem;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/* Optional: responsive stacking on small screens */
+@media (max-width: 768px) {
+  .grants-slides {
+    flex-direction: column;
+  }
+  
+
+  .prev, .next {
+    position: static;
+    margin: 0.5rem 0;
+  }
+
+  .year-obj-1, .year-obj-2, .year-obj-3 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* === first history === */
+.history {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.center-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+.history-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-side,.right-side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-image, .left-image {
+  width: 48%;
+  
+}
+
+.right-image img, .left-image img {
+  width: 100%;
+  /* height: auto; */
+  
+  display: block;
+  border-radius: 10px;
+}
+
+.left-image img {
+
+  margin: auto;
+}
+
+
+.year h1 {
+  margin: 0;
+}
+/* Footer Styling */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 60px;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+.footer-text {
+  font-size: 15px;
+  width: 30%;
+  float: left;
+}
+
+.footer-links {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #aaa;
+}
+
+/* Footer Mobile */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunnison Home Association About</title>
+  <link rel="stylesheet" href="aboutStyle.css" />
+  
+</head>
+<body>
+
+  <nav class="navLinks">
+    <div class="GHA_Logo"><img id="logo" src="homePhotos/ghaLogo.png"></div>
+    
+    <!-- Hamburger icon (mobile only) -->
+    <button class="hamburger" onclick= toggleMenu()>&#9776;</button>
+
+    <div class="center-links">
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="activities.html">Activities</a>
+      <a href="resources.html" class="active">Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i> <!-- down arrow for drop down menu -->
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="grants.html">Grants</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <div class="aboutImage">
+    <script src="script.js"></script>
+    <img id="scrollImg" src="aboutPhotos/aboutPic.jpg" alt="About Image">
+    <div class="imageTextMiddle"><h1>About Us</h1></div>
+
+  </div>
+
+  <div class="mission-objective-container">
+  <div class="objective-obj">
+    <div class="objective-text">
+      <h1>Our Objective</h1><br>
+      <b>
+        The Objective of this Association is to establish, develop and support senior living facilities and 
+        service to senior citizens without regard to race, creed, color, gender or national origin.
+      </b>
+    </div>
+  </div>
+
+  <div class="mission-obj">
+    <div class="mission-text">
+      <h1>Our Mission</h1><br>
+      <b>
+        The Mission of this Association is to assist in the provision of basic needs and amenities to Seniors
+        in the Gunnison Valley. Those services may include housing, food assistance, transportation, medical
+        needs, or social and cultural enrichment opportunities. It is our goal through our activities and grant
+        program, and additional large cash gifts, to provide financial assistance to enhance the lives 
+        of Seniors in our area, whether full-time residents or summer residents.
+      </b>
+    </div>
+  </div>
+</div>
+
+  <div class="boardOfDirectors">
+    <div class="board-img">
+                <img src="aboutPhotos/boardOfDirectors.jpg">
+    </div>
+    <div class="boardText">
+        <h1>Board Of Directors</h1>
+        <b>
+        </b>
+    </div>
+  </div>
+
+
+  <div class="history-obj">
+    <div class="history-header">
+      <h1>History</h1>
+      <b> A look at Gunnison Home Associations history from 1972 to present day </b>
+    </div>
+
+    <div class="history-slides">
+      <a class="prev" onclick="plusHisSlides(-1)">&#10094;</a>     
+
+      <div class="year-obj-1">
+        <p class="year"></p>
+        <img class="historyImg">
+        <p class="historyBlurb"></p>
+      </div>
+
+      <div class="year-obj-2">
+        <p class="year"></p>
+        <img class="historyImg">
+        <p class="historyBlurb"></p>
+      </div>
+
+      <div class="year-obj-3">
+        <p class="year"></p>
+        <img class="historyImg">
+        <p class="historyBlurb"></p>
+      </div>
+
+      <a class="next" onclick="plusHisSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <div class="history-header-ext">
+    <h1>More History</h1>
+    <b> A deeper look at Gunnison Home Associations history from 1972 to present day </b>
+  </div>
+
+  <div class="history">
+    <div class="center-line"></div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>1972</h1></div>
+        <div class="content">
+          <b>
+            Ben Jorgensen donated to the City of Gunnison 17 acres of land located in West Gunnison, near the Gunnison River and within sight of the spectacular rock formation known locally as the Palisades. The land was to be perpetually reserved for the exclusive use as a site for the construction and operation of a long-term care facility and appurtenant dwelling units for the elderly.
+          </b>
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="aboutPhotos/city_Council.jpg" alt="Gunnison City Council Image" style="width:50%;">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>1973</h1></div>
+        <div class="content">
+          <b>
+            Gunnison City Council appointed a five member committee to pursue the vision.  The Gunnison Home Association was incorporated on April 23, 1973 and the Gunnison City Council transferred ownership of the land donated by Ben Jorgenson to the new organization.    
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>1976 </h1></div>
+        <div class="content">
+          <b>
+            The completion of the 54-bed Health Care Center and on October 11, 1976 the first three residents were received
+          </b>
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="aboutPhotos/oldNursingHome.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>1981</h1></div>
+        <div class="content">
+          <b>
+            In 1981 the ambience of the Center was greatly improved with the addition of the Iva Lehman Solarium, named for the person most responsible for raising the funds and getting the $96,000 addition built with no additional debt.  This project was followed in 1986 when, in memory of Clarence Lehman, a workshop and storage facility was constructed, again without any additional debt.
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>1991 </h1></div>
+        <div class="content">
+          <b>
+            The third major project was the construction of a 4,200 square foot addition and major remodeling of important space in the original building.  This project, dedicated on November 24, 1991, as the Mildred R. Brown Addition, was named in recognition of a major contribution which included still-producing oil wells in Oklahoma.  Her funds were supplemented by donations from hundreds of other supporters.  All three of these expansion projects were completed without additional debt.            </b>
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="" alt="Original Nursing Home">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>1995</h1></div>
+        <div class="content">
+          <b>
+            By the vote of Gunnison County citizens a 3.5 mill levy for tax support was passed for
+            the Nursing Homes operation.  In turn, the Gunnison Home Association released to
+            Gunnison County the 5 acres of land around the Nursing Home with all physical assets
+            pertaining to it. ($3,000,000 value with $300,000 debt = 10% investment)
+
+            Following that transaction, the Gunnison Home Association was encouraged by the
+            Gunnison County Commissioners to keep the remaining 11+ acres and continue the development of senior amenities; offering support and assistance whenever possible.
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>2000 </h1></div>
+        <div class="content">
+          <b>
+            The Willows Assisted Living was built along with the development of 3rd Street,
+            surrounding roadways, curb & gutter, pavement and all necessary utilities for Phase 1. (At a $2,000,000 investment)
+          </b>
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="aboutPhotos/assisted_living.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="aboutPhotos/rvParkSkyVeiw.jpg" alt="Historic Image">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>2007</h1></div>
+        <div class="content">
+          <b>
+            The GHA began looking at opportunities to utilize the 8.6 acres on the north end of the property which is within the 100 year 
+            flood plain.  The design and lay-out of the Park and the project management was provided at no cost by Don Crosby who was President
+             of the GHA Board.  The original construction included an office, a patio, roadways, utilities and landscaping for 60 sites for 
+             summer recreational vehicles.  The spaces are for Seniors only.   The Park opened in July of 2007 and a Grand Opening celebration
+              was held in September 2007.  Since the initial construction an extended covered patio, a garage, a gazebo and two dog parks have been added.             
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>2007-2011 </h1></div>
+        <div class="content">
+          <b>
+            Donations made by the GHA totaled $36,500.00 for the benefit of Seniors in our community. Donations included new automatic room doors and a new dining room floor 
+            at the Willows, an automatic door at the Richardson Hall Senior housing, funding for Senior medical needs transportation and a 
+            donation to the Food Pantry which is used by many Seniors in our community.
+
+          </b>
+        </div>
+      </div>
+      <div class="right-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>2012-2015</h1></div>
+        <div class="content">
+          <b>
+            The GHA contributed a total of $28,635.00 to projects at the Willows Assisted Living,  the Volunteer Fire Department,
+             Senior Scoops (newspaper calendar promoting Senior activities), and a contribution to the City of Gunnison for the Senior 
+             wing at the Gunnison Rec Center.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-side">
+        <div class="year"><h1>2015-2019</h1></div>
+        <div class="content">
+          <b>
+            Camper nights, have continued to grow each year with our high count to date being 6,040 camper nights in 2019.
+
+            Efforts are on-going to provide handicap accessible independent living units for Seniors.  
+            Those units need to be close to public and private services.  Construction of these units had originally 
+            been planned close to the existing facilities, but the construction of the new Health Care Center, and the 
+            continued use of the old Care Center eliminated that possibility.
+            </b>
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    <div class="history-row">
+      <div class="left-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+
+      <div class="right-side">
+        <div class="year"><h1>2020</h1></div>
+        <div class="content">
+          <b>
+            In 2020 the year began later than planned and we got off to a slow start due to COVID-19. 
+            The Park Managers and Camp Hosts worked very hard to plan activities that met all restrictions 
+            while still providing the experiences our guests have come to enjoy and expect. Camper nights were 
+            down due to cancelled reservations, but the staff worked hard to fill vacancies and allow short-term 
+            guests to enjoy the beauty of the Park.
+          </b>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="history-row">
+
+      <div class="left-side">
+        <div class="year"><h1>2021-2025</h1></div>
+        <div class="content">
+          <b>
+            The first cycle of our new grant program was held in the last quarter of 2020. The GHA will continue the grant program, awarding money 
+            annually to organizations for dis that provide services for Seniors.  Organizations given money in recent years include the Willows, 
+            Hospice & Palliative Care, the Gunnison Food Pantry, Gunnison County Senior Resource Center, a fireplace for the senior area at the new
+            Gunnison County Public Library, Six Points, and a handicap-accessible entry for the Gunnison Arts Center.  
+          </b><br>
+          <a class = "standardButton" href="grants.html">Grant Page</a> 
+        </div>
+      </div>
+
+      <div class="right-image">
+        <img src="temp.jpg" alt="Historic Image">
+      </div>
+    </div>
+
+    
+
+  </div>
+
+ <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="homePhotos/ghaLogo.png" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        <p>The Mission of the Gunnison Home Association (GHA) is to assist in the provision of basic needs and amenities to seniors in the Gunnison Valley. These services may include housing, food assistance, transportation, medical needs or social and cultural enrichment. It is our goal through our activities and grant program to provide financial assistance to be used to enhance the lives of senior citizens in our area, whether full-time or seasonal residents.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>

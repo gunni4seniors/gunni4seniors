@@ -1,0 +1,70 @@
+{
+  "grants": [
+    {
+      "amount": "$10,000",
+      "image": "grantFiles/photos/IMG_3035.jpg",
+      "blurb": "Support for Six Points, helping cover un-reimbursed medical and travel expenses for seniors who need extra assistance. This funding ensures that essential care and necessary appointments remain accessible for those with limited means."
+    },
+    {
+      "amount": "$15,000",
+      "image": "grantFiles/photos/IMG_3022.jpg",
+      "blurb": "Funding dedicated to food assistance programs for seniors, helping ensure that community members in need have consistent access to nutritious meals throughout the year."
+    },
+    {
+      "amount": "$12,100",
+      "image": "grantFiles/photos/IMG_3032.jpg",
+      "blurb": "Support for the Gunnison Valley Animal Welfare League (GVAWL), helping cover adoption fees so seniors can welcome a companion animal into their homes—providing comfort, joy, and companionship."
+    },
+    {
+      "amount": "$10,000",
+      "image": "grantFiles/photos/GVHEAT.jpg",
+      "blurb": "Support for the Gunnison Seniors to help reduce their energy costs and make their homes safe, livable, and affordable."
+    },
+    {
+      "amount": "$18,500",
+      "image": "grantFiles/photos/IMG_3042.jpg",
+      "blurb": "Funding to help create a dedicated senior wing at the Ann Zugelder Gunnison Library, offering a welcoming space for reading, learning, and community programs specifically geared toward older residents."
+    },
+    {
+      "amount": "",
+      "image": "grantFiles/photos/originalBuilding.jpg",
+      "blurb": "Ongoing support for upkeep and maintenance of the Original Health Care Center, a facility built and historically managed by the Gunnison Home Association to serve the needs of the community’s seniors."
+    },
+    {
+      "amount": "",
+      "image": "grantFiles/photos/IMG_2963.jpg",
+      "blurb": "Long-term investment in Assisted Living, including the original construction funded by GHA. Recent grants supported the replacement of the fire suppression system and also provide seniors with a monthly meal out, offering both safety and community connection."
+    },
+    {
+      "amount": "$172,000",
+      "image": "grantFiles/photos/willowsalc.jpg",
+      "blurb": "A donation to Gunnison Valley Health to fund the installation of a modern sprinkler system at The Willows Assisted Living Center, helping ensure a safe, secure, and well protected living environment for its residents."
+    },
+    {
+      "amount": "$7,000",
+      "image": "grantFiles/photos/IMG_0421.jpg",
+      "blurb": "Funding provided to the Gunnison Arts Center for the installation of an accessible ramp, improving mobility and ensuring all visitors can comfortably enjoy community arts programs."
+    },
+    {
+      "amount": "$8,000",
+      "image": "grantFiles/photos/IMG_0422.jpg",
+      "blurb": "Grant supporting the addition of an accessible ramp and a golf cart for transportation at the Pioneer Museum, enhancing accessibility for seniors and visitors with mobility challenges."
+    },
+    {
+      "amount": "$8,000",
+      "image": "grantFiles/photos/americanlegion.jpg",
+      "blurb": "Grant awarded to the American Legion for the construction of an accessible outdoor patio and installation of an accessible ramp. Creating a welcoming, inclusive gathering space for members and the greater community."
+    },
+    {
+      "amount": "$6,500",
+      "image": "grantFiles/photos/IMG_0480.jpg",
+      "blurb": "Funding to the Willows, dedicated to providing seniors with a monthly meal out. Giving residents an opportunity to socialize, dine together, and enjoy time out in the community."
+      
+    },
+    {
+      "amount": "$1,280",
+      "image": "grantFiles/photos/mountainRoots.jpg",
+      "blurb": "Donation for Mountain Roots to support providing nutritious produce across the Gunnison valley and western Colorado. From free boxes of produce to creating community in their gardens."
+    }
+  ]
+}

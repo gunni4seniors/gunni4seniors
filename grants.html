@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunnison Home Association About</title>
+  <link rel="stylesheet" href="grantStyle.css" />
+  
+</head>
+<body>
+
+  <nav class="navLinks">
+    <div class="GHA_Logo"><img id="logo" src="homePhotos/ghaLogo.png"></div>
+    
+    <!-- Hamburger icon (mobile only) -->
+    <button class="hamburger" onclick= toggleMenu()>&#9776;</button>
+
+    <div class="center-links">
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="activities.html">Activities</a>
+      <a href="resources.html" class="active">Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i> <!-- down arrow for drop down menu -->
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="grants.html">Grants</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <div class="grantImage">
+    
+    <img id="scrollImg" src="aboutPhotos/aboutPic.jpg" alt="About Image">
+    <div class="imageTextMiddle"><h1>Grants & Guidelines</h1></div>
+
+  </div>
+
+  <div class="overview-eligibility-container">
+  <div class="overview-obj">
+    <div class="overview-text">
+      <h1>Overview</h1><br>
+      <b>
+        The Gunnison Home Association (GHA) of Gunnison, Colorado will be awarding grants for programs that benefit Gunnison area senior citizens.  <br>For more information about the grants please contact Debbie at gha4seniors@yahoo.com.
+      </b>
+    </div>
+  </div>
+
+    <div class="eligibility-obj">
+        <div class="eligibility-text">
+        <h1>Eligibility</h1><br>
+        <b>
+            Applicants must target the senior (55+) population of the Gunnison area.
+            Applicants must have completed a final report for any past grant received.  Any missing report from a previous grant automatically disqualifies an applicant until all reports are up to date.    
+            GHA does not generally support religious organizations where support might suggest the endorsement of religious doctrine.  However, GHA may provide grants to these groups under certain circumstances:   They must demonstrate that their proposed project is publicly accessible – irrespective of shared beliefs - and is not intended to encourage the adoption of a particular religious point of view.    
+            GHA does not support salaries or administrative costs.
+
+        </b>
+        </div>
+    </div>
+
+    <div class="downloadGrantInfo">
+        <h1>Download Grant Info As PDF</h1>
+        <ul>
+          <li>Grant Guidelines<br>        
+          <button class="standardButton downloadBtn" data-download="guidelines" onclick="downloadPDF(this)">Download Grant Guidelines PDF</button></li>
+
+          <li>Grant Application Form<br>
+            <button class="standardButton downloadBtn" data-download='application'  onclick="downloadPDF(this)">Download Grant Application PDF</button></li>
+        </ul>
+  
+    </div>
+  </div>
+
+  <div class="approvedGrantsDonations">
+    <h1>Total Donations & Grants 2021-2025</h1>
+    <ul>
+      <li>2021: $64,225</li>
+      <li>2022: $52,000</li>
+      <li>2023: $51,745</li>
+      <li>2024: $52,345</li>
+      <li>2025: $215,600</li>
+    </ul>
+  </div>
+
+  <div class="grants-obj">
+    <div class="grants-header">
+      <h1>Approved Grants</h1>
+      <b>Recent grants approved by Gunnison Home Association</b>
+    </div>
+
+    <div class="grants-slides">
+      <a class="prev" onclick="plusGrantSlides(-1)">&#10094;</a>
+
+      <div class="grant-obj-1">
+        <p class="grant-amount"></p>
+        <img class="grantImg">
+        <p class="grantBlurb"></p>
+      </div>
+
+      <div class="grant-obj-2">
+        <p class="grant-amount"></p>
+        <img class="grantImg">
+        <p class="grantBlurb"></p>
+      </div>
+
+      <div class="grant-obj-3">
+        <p class="grant-amount"></p>
+        <img class="grantImg">
+        <p class="grantBlurb"></p>
+      </div>
+
+      <a class="next" onclick="plusGrantSlides(1)">&#10095;</a>
+    </div>
+</div>
+
+
+
+ <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="homePhotos/ghaLogo.png" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        <p>The Mission of the Gunnison Home Association (GHA) is to assist in the provision of basic needs and amenities to seniors in the Gunnison Valley. These services may include housing, food assistance, transportation, medical needs or social and cultural enrichment. It is our goal through our activities and grant program to provide financial assistance to be used to enhance the lives of senior citizens in our area, whether full-time or seasonal residents.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>

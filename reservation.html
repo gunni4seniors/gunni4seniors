@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunnison Home Association Reservations</title>
+  <link rel="stylesheet" href="reservationStyle.css" />
+  
+</head>
+<body>
+
+  <nav class="navLinks">
+    <div class="GHA_Logo"><img id="logo" src="homePhotos/ghaLogo.png"></div>
+    
+    <!-- Hamburger icon (mobile only) -->
+    <button class="hamburger" onclick= toggleMenu()>&#9776;</button>
+
+    <div class="center-links">
+      <a href="index.html">Home</a>
+      <a href="reservation.html">Reservations</a>
+      <a href="activities.html">Activities</a>
+      <a href="resources.html" class="active">Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i> <!-- down arrow for drop down menu -->
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="grants.html">Grants</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <div class="ReservationImage">
+    <script src="script.js"></script>
+    <img id="scrollImg" src="reservationPhotos/rvParkSkyVeiw.jpg" alt="Reservation Image">
+    <div class="imageTextMiddle"><h1>Reservations & Info </h1></div>
+    <a class="credit" href ="https://www.dhlphotographix.com/" target="_blank" rel="noopener noreferrer" >Photos Courtesy of www.dhlphotographix.com</a>
+  </div>
+  
+  <div class="resContentOne">
+    <div class="resText">
+      <h1>Palisades Senior RV Park  </h1>
+      <p>
+        The Gunnison Home Association offers a summer time RV park located near Main Street and close to nature.<br>
+        Dates open the summer of 2026 - May 10 to September 14.<br>
+        <br>The Palisades Senior RV Park offers daily, weekly, and monthly rentals for all seniors 55+. <br><br>
+        Daily Rentals: $65.00 including tax<br>
+        Weekly Rentals: $429.00 including tax<br>
+        Monthly Rentals: $1,200 no tax for monthly rentals <br>
+        <br>To make a reservation <a href=contact.html style="color: red;">CALL</a> the front office and learn more from our kind staff. PARK RULES BELOW.
+
+      </p>
+    </div>
+  </div>
+  
+  <div class="mapSection">
+    <div class="googleMap">
+        <!-- Zoom for map controlled by adjusting !1d#######! Currently set to !1d15000.3882911152327! -->
+        <!-- Future updates may effect zoom or break map. If so change to !1d8000.3882911152327! (original value) -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.3882911152327!2d-106.94809108788562!3d38.547866771683104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873f92ededd1d8b5%3A0xa61f060d14dc0a57!2sPalisades%20Senior%20RV%20Park!5e0!3m2!1sen!2sus!4v1768585940739!5m2!1sen!2sus" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="google map image" ></iframe>
+    </div>
+    <div class="parkMap">
+      <img id ="rightImage" src = "reservationPhotos/RVsites.jpg" alt="Park Map Image">
+    </div>
+  </div>
+
+  <div class="AmenitiesContent">
+      <div class="amenitiesText">
+          <h1>Amenities</h1>
+          <ul class="amenities">
+              <li>27 pull-through sites</li>
+              <li>33 back-in sites</li>
+              <li>30 and 50 Amp service</li>
+              <li>City utilities</li>
+              <li>Laundry room</li>
+              <li>Quarter rolls 10$ for laundry</li>
+              <li>Handicapped accessible restroom and showers</li>
+              <li>Wi Fi internet</li>
+              <li>Quiet hours enforced</li>
+              <li>Covered recreation area</li>
+              <li>Walk to the river & park</li>
+              <li>Two grass dog runs for small and large dogs </li>
+              <li>Biking and walking trails</li>
+              <li>5 mph speed limit</li>
+          </ul>
+          <a class = "standardButton" href="contact.html">Contact Us!</a>
+      </div>  
+      <div class = "reservationSlideShow">
+          <div class="SlidesObj">
+              <img id="resSlidesImg" src="" alt="Slideshow">
+              <!-- Next and previous buttons -->
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          </div>
+  
+      </div>
+     </div>
+
+
+    <div class="ParkRulesContent">
+      <div class="parkRulesText">
+        <h1>Park Rules</h1>
+
+        <h2>Critical Information</h2>
+        <ul class="rulesList">
+          <li>Office hours are posted on the office door.</li>
+          <li>Check-in time is 12:00 pm. Checkout time is 11:00 am.</li>
+          <li>WIFI password: Obtain at front office.</li>
+          <li>Mail: Use Park name + your name + your site # & Park address for deliveries:
+            <br>Palisades Senior RV Park C/O (Your name) Site # ( ) <br>470 N. 3rd St <br>Gunnison CO 81230.
+          </li>
+          <li>FedEx and UPS deliveries are made daily to the office.</li>
+          <li>Prepay $10 to wash RVs/ATVs/Vehicles (power washer available upon request).</li>
+          <li>Restrooms, showers, and laundry are located in the office building. These are locked from dusk to dawn and the code can be obtained at the office desk. Quarters and bags of ice may be purchased from the office.</li>
+          <li>We do not give refunds for early departures.</li>
+        </ul>
+
+        <h2>Visitors</h2>
+        <ul class="rulesList">
+          <li>Please notify the office in advance of all visitors in order for liability and safety requirements to be met.</li>
+          <li>Any overnight guest must be 55+ and will be subject to a $5.00 fee per night, per person. Visitors under 55 are welcome in the park, but they must leave the park by dark.</li>
+        </ul>
+
+        <h2>Park Rules and Safety</h2>
+        <ul class="rulesList">
+          <li>It is illegal to consume any Cannabis products outside of your RV. (If your neighbor can smell it, it is illegal. Please close your windows!)</li>
+          <li>The Park is not liable for loss by fire, storm, accident, theft, trees, or any cause beyond its control, nor is it liable for illness including COVID. The use of all facilities is at your own risk.</li>
+          <li>5 MPH is enforced throughout the Park.</li>
+        </ul>
+
+        <h2>Community Guidelines</h2>
+        <ul class="rulesList">
+          <li>Stay on the main road. Do not drive through unoccupied campsites.</li>
+          <li>Observe quiet hours from 10:00 pm – 7:00 am.</li>
+          <li>Help us keep the park neat, clean, and orderly.</li>
+          <li>Use generators only when there is no electricity.</li>
+          <li>Only bagged trash in dumpsters. No furniture, appliances, flammables in/outside of dumpsters. Break down corrugated cardboard, crush cans and plastic bottles before placing in recycle bins.</li>
+          <li>We are on the edge of wildlife habitat. Expect Deer, Fox, Raccoons, Bear, Bobcats and Coyotes. Watch your pets and prevent wildlife attraction by keeping trash, coolers, and food inside. Bears, in particular, like bird feeders. Do not feed the wildlife.</li>
+          <li>Keep family pets (dogs, cats, etc.) on a leash whenever you are outside your rig.</li>
+          <li>Please pick up after your dog or cat. We have poop bags in both dog parks.</li>
+        </ul>
+
+        <h2>At Your Site</h2>
+        <ul class="rulesList">
+          <li>Your camper and all associated units must fit on your gravel site.</li>
+          <li>No overflow parking is available. Please do not work on RVs or other vehicles at your site.</li>
+          <li>Two person limit per rig unless following regulations for guests over 55. See above.</li>
+          <li>Please make sure things are moved off the grass on mowing days.</li>
+          <li>Only propane fire pits are allowed in the park. No grills allowed on picnic tables. As you would expect, if your picnic table is melted, you will be billed for the table.</li>
+        </ul>
+
+        <a class="standardButton" href="contact.html">Contact Us!</a>
+      </div>  
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="homePhotos/ghaLogo.png" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        <p>The Mission of the Gunnison Home Association (GHA) is to assist in the provision of basic needs and amenities to seniors in the Gunnison Valley. These services may include housing, food assistance, transportation, medical needs or social and cultural enrichment. It is our goal through our activities and grant program to provide financial assistance to be used to enhance the lives of senior citizens in our area, whether full-time or seasonal residents.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
