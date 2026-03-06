@@ -1,0 +1,14 @@
+# Docker
+Dockerfile
+.dockerignore
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python (if you use scripts)
+__pycache__/
+*.pyc
+*.py
+# Environment files
+.env
