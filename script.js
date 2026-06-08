@@ -198,8 +198,8 @@ function downloadPDF(button) {
   const type = button.dataset.download;
 
   const files = {
-    guidelines: "grantFiles/Grant Guidelines.pdf",
-    application: "grantFiles/Grant Application Form.pdf"
+    guidelines: "grantFiles/GrantGuidelines.pdf",
+    application: "grantFiles/GrantApplication.pdf"
   };
 
   const path = files[type];
